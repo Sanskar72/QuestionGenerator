@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q Generator: Home</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='css/baseCSS.css') }}" >
+    </head>
+    <body>
+        <form action="{{ url_for('generateQ') }}" method="post">
+            <fieldset><legend><h2>Number of Questions</h2></legend>
+            <input type="number" name="numQ">
+            <input type="submit">
+        </fieldset>
+        </form>
+
+    </body>
+</html>
