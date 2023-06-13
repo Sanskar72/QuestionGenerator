@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChatGPT: Output</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='css/baseCSS.css') }}" >
+    </head>
+    <body>
+        <h2>ChatGPT Response</h2>
+        <table border="1">
+            <tr><th>Prompt</th><td>{{ data[0] }}</td></tr>
+            <tr><th>Response</th><td>{{ data[1] }}</td></tr>
+        </table>
+    </body>
+</html>

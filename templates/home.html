@@ -12,5 +12,15 @@
         </fieldset>
         </form>
 
+        <form action="{{ url_for('askGPT') }}" method="post">
+            <fieldset><legend><h2>Ask ChatGPT</h2></legend>
+            Type of Prompt: Concept <input type="radio" name="type" value="concept">&nbsp;&nbsp;&nbsp; Coding <input type="radio" name="type" value="coding">  <br><br>
+            Dataset URL: <input typr="text" name="dataset" size = "50"> <br><br>
+            Prompt: <input typr="text" name="question" size = "50"> 
+            <input type="submit">
+        </fieldset>
+        </form>
+
+
     </body>
 </html>
